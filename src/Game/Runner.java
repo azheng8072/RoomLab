@@ -3,7 +3,6 @@ package Game;
 import People.Person;
 import Rooms.Room;
 import Rooms.WinningRoom;
-
 import java.util.Scanner;
 
 public class Runner {
@@ -41,6 +40,10 @@ public class Runner {
 			{
 				System.out.println("Your coordinates: row = " + player1.getxLoc() + " col = " + player1.getyLoc());
 				
+			}
+			if (move.equals("maps"))
+			{
+				System.out.println(Board.printBoard(4,4));
 			}
 			else {
 				System.out.println("Please choose a valid move.");
